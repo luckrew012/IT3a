@@ -14,6 +14,7 @@
 </html>
 
 <?php
+require_once __DIR__ . '/../../config/config.php';
 // Database Connection
 $host = 'localhost';
 $db = 'it30a_lab_db';
@@ -36,7 +37,7 @@ try{
 }
 
 // Session
-session_start();
+//session_start();
 
 // Determine current section
 $section = $_GET['section'] ?? 'students';
